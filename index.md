@@ -10,8 +10,11 @@ In this paper, we partially fill this gap by presenting a large-scale empirical 
 <div style="text-align: justify">
 I. The <strong><em>goal</em></strong> of this study is to empirically analyze the effectiveness of deep/shallow learning techniques for detecting software vulnerabilities in source code at function-level granularity when using different models and source code abstractions. We conduct experiments with three different models (two deep and one shallow). In particular, we experiment with: (i) Random Forest (RF), (ii) a Convolutional Neural Network (CNN), and (iii) a Recurrent Neural Network (RNN), with the first being representative of shallow classifiers and the last two of deep learning models. We chose RF due to its popularity in the software engineering domain. Concerning the two DL models, they have been used, with different variations, in previous studies on the automatic detection of software vulnerabilities.
 
+<br/>
+
 On top of the three experimented models, we also exploit as baseline for our experiments an automated machine learning (AutoML) approach. AutoML is a solution to build DL systems without human intervention and not relying on human expertise.  It has been widely used in Natural Language Processing (NLP) and it is provided by Google Cloud Platform (GCP). AutoML eases the hyper-parameter tuning and feature selection using Neural Architecture Search (NAS) and transfer learning. This solution was released by Google in 2019 for NLP and in 2018 for Computing Vision.
 
+<br/>
 II. The <strong><em>context</em></strong> of the study is represented by three datasets of C/C++ code reporting software vulnerabilities at the function granularity level, for a total of 1,841,323 functions, of which 390,558 are vulnerable ones. 
 </div>
 
