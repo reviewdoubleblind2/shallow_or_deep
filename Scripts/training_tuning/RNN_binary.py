@@ -27,7 +27,7 @@ EPOCHS= 100
 VOCAB= 150
 #Approach it can be binary 
 approach = 'binary'
-# Dataset Russell (R-DS), Julieta (J-DS) and OUR (GH-DS),
+# Dataset Russell (R-DS), Juliet (J-DS) and OUR (GH-DS),
 dataset= 'Russell'
 # Representation b0 (R0), b1 (R1), b1_int (R2), b1_iden (R3), b1_int_iden (R4)
 rep= 'b0'
