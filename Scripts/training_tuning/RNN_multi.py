@@ -33,7 +33,7 @@ EPOCHS= 100
 VOCAB= 152
 #Approach multi
 approach = 'multi'
-# Dataset Russell (R-DS), Julieta (J-DS) and OUR (GH-DS), if Russell you must change number of output neurons(multi)
+# Dataset Russell (R-DS), Juliet (J-DS) and OUR (GH-DS), if Russell you must change number of output neurons(multi)
 dataset= 'Russell'
 # Representation b0 (R0), b1 (R1), b1_int (R2), b1_iden (R3), b1_int_iden (R4)
 rep= 'b0'
