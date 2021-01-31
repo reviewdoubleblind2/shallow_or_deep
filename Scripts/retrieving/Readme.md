@@ -18,5 +18,5 @@ If you want to obtain the best model you can change the following constants for:
 * **approach** can be 'binary' and 'multi' 
 * **dataset** can be 'Russell' (R-DS), 'Juliet' (J-DS) and 'OUR' (GH-DS)
 * **rep** can be 'b0' (R0), 'b1' (R1), 'b1_int' (R2), 'b1_iden' (R3), 'b1_int_iden' (R4)
-* **NN**  csn be 'CNN' and 'RNN'
+* **NN**  csn be 'RF'
 
