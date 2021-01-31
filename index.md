@@ -32,11 +32,11 @@ We answer this RQ in two main steps. First, we create binary classifiers able to
 
 We relied on three datasets composed by C/C++ source code functions and information about the vulnerabilities affecting them.
 
-1. [GitHub Archive Dataset (GH-DS)]()
+1. [GitHub Archive Dataset (GH-DS)](https://tinyurl.com/yytt25yy)
 
-2. [STATE IV Juliet Test Suite Dataset (J-DS)]()
+2. [STATE IV Juliet Test Suite Dataset (J-DS)](https://tinyurl.com/yy4pj6ol)
 
-3. [Russell et al. Dataset (R-DS)]()
+3. [Russell et al. Dataset (R-DS)](https://tinyurl.com/yywc9nrs)
 
 ### Code Representation
 
@@ -48,17 +48,17 @@ Starting from these two datasets, we built five versions of each one by represen
 
 The abstract representations can be found below:
 
-1. [GitHub Archive Dataset (GH-DS) (Abstract representations)]()
+1. [GitHub Archive Dataset (GH-DS) (Abstract representations)](https://tinyurl.com/y4p3q532)
 
-2. [STATE IV Juliet Test Suite Dataset (J-DS) (Abstract representations)]()
+2. [STATE IV Juliet Test Suite Dataset (J-DS) (Abstract representations)](https://tinyurl.com/y6lw34t5)
 
-3. [Russell et al. Dataset (R-DS) (Abstract representations)]()
+3. [Russell et al. Dataset (R-DS) (Abstract representations)](https://tinyurl.com/y6kb597a)
 
 
 ### Data Cleaning
 
 <div style="text-align: justify">
-Before using the three datasets to train and evaluate the experimented models, we performed a [transformation and cleaning process]() on each of them to (i) make the data treatable with DL/shallow models, and (ii) avoid possible pitfalls that are common in studies of machine learning on code (e.g., duplicated functions due to forked projects). 
+Before using the three datasets to train and evaluate the experimented models, we performed a [transformation and cleaning process](https://github.com/reviewdoubleblind2/shallow_or_deep/tree/master/Scripts) on each of them to (i) make the data treatable with DL/shallow models, and (ii) avoid possible pitfalls that are common in studies of machine learning on code (e.g., duplicated functions due to forked projects). 
 </div>
 
 <div style="text-align: justify">
@@ -68,6 +68,6 @@ By starting with [five different datasets]() of function representations for eac
 ### Classifiers
 
 <div style="text-align: justify">
-Given the variables involved in our study, namely four approaches (i.e., GCP-AutoML, RF, CNN & RNN), five representations, three datasets, and two types of classification---binary and multiclass), we built a total of 120 different models. We publicly release the source code of the [three main models]().
+Given the variables involved in our study, namely four approaches (i.e., GCP-AutoML, RF, CNN & RNN), five representations, three datasets, and two types of classification---binary and multiclass), we built a total of 120 different models. We publicly release the source code of the [base models](https://github.com/reviewdoubleblind2/shallow_or_deep/tree/master/Scripts).
 </div>
 
