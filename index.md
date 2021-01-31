@@ -32,11 +32,11 @@ We answer this RQ in two main steps. First, we create binary classifiers able to
 
 We relied on three datasets composed by C/C++ source code functions and information about the vulnerabilities affecting them.
 
-1. GitHub Archive Dataset (GH-DS)
+1. [GitHub Archive Dataset (GH-DS)] ()
 
-2. STATE IV Juliet Test Suite Dataset (J-DS)
+2. [STATE IV Juliet Test Suite Dataset (J-DS)] ()
 
-3. Russell et al. Dataset (R-DS)
+3. [Russell et al. Dataset (R-DS)] ()
 
 ### Code Representation
 
@@ -46,43 +46,28 @@ From each dataset we extracted two sets of tuples. The first one, in the form (f
 Starting from these two datasets, we built five versions of each one by representing the code in different ways, to study how the code representation affects the performance of the experimented models.
 </div>
 
+The abstract representations can be found below:
+
+1. [GitHub Archive Dataset (GH-DS) (Abstract representations)] ()
+
+2. [STATE IV Juliet Test Suite Dataset (J-DS) (Abstract representations)] ()
+
+3. [Russell et al. Dataset (R-DS) (Abstract representations)] ()
 
 
+### Data Cleaning
 
+<div style="text-align: justify">
+Before using the three datasets to train and evaluate the experimented models, we performed a [transformation and cleaning process]() on each of them to (i) make the data treatable with DL/shallow models, and (ii) avoid possible pitfalls that are common in studies of machine learning on code (e.g., duplicated functions due to forked projects). 
+</div>
 
+<div style="text-align: justify">
+By starting with [five different datasets]() of function representations for each dataset. We addressed conflicting representation (i.e., two samples with same code representation and different labels) and duplicates. In case of conflicting representations, all instances were removed. As for the duplicates, we removed all duplicates having the same raw source code representation and the same label (i.e., type of vulnerability affecting them, if any), keeping only the first occurrence. This means that it is possible to have in our datasets two snippets having the same abstract representation, but not the same raw source code. Such a design choice is justified by the fact that the translation from raw source code to abstract representation is part of the classification pipelines used in ML implementations, and it is performed after the removal of duplicates.
+</div>
 
-You can use the [editor on GitHub](https://github.com/reviewdoubleblind2/data_driven_models/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Classifiers
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<div style="text-align: justify">
+Given the variables involved in our study, namely four approaches (i.e., GCP-AutoML, RF, CNN & RNN), five representations, three datasets, and two types of classification---binary and multiclass), we built a total of 120 different models. We publicly release the source code of the [three main models]().
+</div>
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/reviewdoubleblind2/data_driven_models/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
