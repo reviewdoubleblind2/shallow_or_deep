@@ -1,1 +1,5 @@
 In this folder you can find three notebooks, each of this notebook correspond to a process in the data cleaning/wrangling.
+
+1. **top5 and quartiles.ipynb:** this notebook can be used for filtering those functions who has a length less than the firts quartile (q1) or greater tha the third quartile (q3). Moreover for the multi-class classification it is used for filtering only the top 5 vulnerabilities.
+1. **Partition_Train_val_test_ANDTokenizer.ipynb:** This notebook can be used for splitting tha data into train, validation and test set. It can be also used for generating the Tokenizers (element needed to obtain the vocabulary and generate the tfidf representations).**For this notebook we need the output of the previous notebook**
+1. **Matrix_vectors_representations.ipynb:** this notebook can be used to generate the respective sequences (inputs for DL) for each dataset and representations for CNN and RNN, you can also use this notebook for **tfidf** generating the bag of words (BOW) for random forest. **For this notebook we need the output of the previous notebook**
