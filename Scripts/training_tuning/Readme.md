@@ -21,7 +21,6 @@ For **CNN_binary.py**, **RNN_binary.py**, **CNN_multi.py**, **RNN_multi.py**, Yo
 * Russell (which represents R-DS)
 
 **vocab**
-Please refer to the csv (****vocab.csv****), in which you can find the maximum length of the vocabulary for each representation, dataset and approach.
+Please refer to the following table (****vocab.csv****), in which you can find the maximum length of the vocabulary for each representation, dataset and approach.
 
-Inline-style: 
 ![alt text](./vocab_data.png)
