@@ -68,6 +68,6 @@ By starting with five different datasets of function representations for each da
 ### Classifiers
 
 <div style="text-align: justify">
-Given the variables involved in our study, namely four approaches (i.e., GCP-AutoML, RF, CNN & RNN), five representations, three datasets, and two types of classification---binary and multiclass), we built a total of 120 different models. We publicly release the source code of the [base models](https://tinyurl.com/y63qnwqg).
+Given the variables involved in our study, namely four approaches (i.e., GCP-AutoML, RF, CNN & RNN), five representations, three datasets, and two types of classification---binary and multiclass), we built a total of 120 different models. We publicly release the source code of the <a href="https://tinyurl.com/y63qnwqg">base models </a>.
 </div>
 
