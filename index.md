@@ -58,7 +58,7 @@ The abstract representations can be found below:
 ### Data Cleaning
 
 <div style="text-align: justify">
-Before using the three datasets to train and evaluate the experimented models, we performed a [transformation and cleaning process](https://tinyurl.com/y63qnwqg) on each of them to (i) make the data treatable with DL/shallow models, and (ii) avoid possible pitfalls that are common in studies of machine learning on code (e.g., duplicated functions due to forked projects). 
+Before using the three datasets to train and evaluate the experimented models, we performed a <a href="https://tinyurl.com/y63qnwqg">transformation and cleaning process </a> on each of them to (i) make the data treatable with DL/shallow models, and (ii) avoid possible pitfalls that are common in studies of machine learning on code (e.g., duplicated functions due to forked projects). 
 </div>
 
 <div style="text-align: justify">
