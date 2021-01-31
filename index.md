@@ -2,7 +2,7 @@
 
 <div style="text-align: justify">
 Deep learning (DL) techniques are on the rise in the software engineering research community. More and more approaches have been developed on top of DL models, also due to the unprecedented amount of software-related data that can be used to train these models. One of the recent applications of DL in the software engineering domain concerns the automatic detection of software vulnerabilities. While several DL models have been developed to approach this problem, there is still limited empirical evidence concerning their actual effectiveness especially when compared with shallow machine learning techniques.
-In this paper, we partially fill this gap by presenting a large-scale empirical study using three vulnerability datasets and five different source code representations (i.e., the format in which the code is provided to the classifiers to assess whether it is vulnerable or not) to compare the effectiveness of two widely used DL-based models and of one shallow machine learning model in (i) classifying code functions as vulnerable or non-vulnerable (i.e., binary classification), and (ii) classifying code functions based on the specific type of vulnerability they contain (or "clean", if no vulnerability is there).  As a baseline we include in our  study the AutoML utility provided by the Google Cloud Platform.
+In this paper, we partially fill this gap by presenting a large-scale empirical study using three vulnerability datasets and five different source code representations (i.e., the format in which the code is provided to the classifiers to assess whether it is vulnerable or not) to compare the effectiveness of two widely used DL-based models and of one shallow machine learning model in (i) classifying code functions as vulnerable or non-vulnerable (i.e., binary classification), and (ii) classifying code functions based on the specific type of vulnerability they contain (or "clean", if no vulnerability is there).  As a baseline we include in our  study the AutoML utility provided by the Google Cloud Platform. Our results show that the experimented models are still far from ensuring reliable vulnerability detection, and that a shallow learning classifier represents a competitive baseline for the newest DL-based models.
 </div>
 
 ## Empirical Study Desgin
@@ -18,7 +18,7 @@ On top of the three experimented models, we also exploit as baseline for our exp
 II. The <strong><em>context</em></strong> of the study is represented by three datasets of C/C++ code reporting software vulnerabilities at the function granularity level, for a total of 1,841,323 functions, of which 390,558 are vulnerable ones. 
 </div>
 
-## Research Question and Hihglights
+## Research Question and Main Context
 
 Having that goal and context in consideration, our study addresses the following research question (RQ):
 
@@ -32,11 +32,11 @@ We answer this RQ in two main steps. First, we create binary classifiers able to
 
 We relied on three datasets composed by C/C++ source code functions and information about the vulnerabilities affecting them.
 
-1. [GitHub Archive Dataset (GH-DS)] ()
+1. [GitHub Archive Dataset (GH-DS)]()
 
-2. [STATE IV Juliet Test Suite Dataset (J-DS)] ()
+2. [STATE IV Juliet Test Suite Dataset (J-DS)]()
 
-3. [Russell et al. Dataset (R-DS)] ()
+3. [Russell et al. Dataset (R-DS)]()
 
 ### Code Representation
 
@@ -48,11 +48,11 @@ Starting from these two datasets, we built five versions of each one by represen
 
 The abstract representations can be found below:
 
-1. [GitHub Archive Dataset (GH-DS) (Abstract representations)] ()
+1. [GitHub Archive Dataset (GH-DS) (Abstract representations)]()
 
-2. [STATE IV Juliet Test Suite Dataset (J-DS) (Abstract representations)] ()
+2. [STATE IV Juliet Test Suite Dataset (J-DS) (Abstract representations)]()
 
-3. [Russell et al. Dataset (R-DS) (Abstract representations)] ()
+3. [Russell et al. Dataset (R-DS) (Abstract representations)]()
 
 
 ### Data Cleaning
