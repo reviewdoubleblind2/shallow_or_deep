@@ -38,6 +38,12 @@ We relied on three datasets composed by C/C++ source code functions and informat
 
 3. [Russell et al. Dataset (R-DS)](https://tinyurl.com/yywc9nrs)
 
+#### Author validation
+
+<div style="text-align: justify">
+We are aware of the fact that commit messages might imprecisely identify bug-fixing commits and, as a consequence, vulnerability-fixing commits, two authors independently analyzed a statistically significant sample (95% confidence level +-5% confidence interval, for a total size of 384) of identified commits to check whether they were actually vulnerability fixes. After solving 45 cases of disagreement, they concluded that 90.3% of the identified vulnerability-fixing commits were <a href="https://tinyurl.com/y32m694m">true positives </a>.
+</div>
+
 ### Code Representation
 
 <div style="text-align: justify">
